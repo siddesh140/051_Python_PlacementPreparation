@@ -199,3 +199,41 @@
 # print(e.getMarks())
 # e.setMarks(39)
 # print(e.getMarks())
+
+# To find the given number is strong number or not
+def fact(n):
+   f = 1 
+   for i in range(1, n+1):
+       f = f * i
+   return f
+
+
+def strong(n):
+    temp = n
+    total = 0
+    while temp > 0 :
+        digit = temp % 10
+        total = total + fact(digit)
+        temp = temp//10
+    if n == total:
+        print("strong number")
+    else:
+        print("weak number 😁")
+strong(6)
+
+
+
+
+
+
+# Find Duplicate : 
+
+# num = [3,2,3,4,5,4,3,5,6]
+# seen = []
+# duplicates = []
+# for i in num:
+#     if i in seen and i not in duplicates:
+#         duplicates.append(i)
+#     else: 
+#         seen.append(i)
+# print(seen,duplicates)
