@@ -8,7 +8,7 @@
 #             print("*", end = " ")
 #     print(" ")
 
-#         *  
+#         *
 #       * * *
 #     * * * * *
 #   * * * * * * *
@@ -37,7 +37,7 @@
 #         print(j, end = " ")
 #     print(" ")
 
-# 1 2 3 4 5 
+# 1 2 3 4 5
 # 1 2 3 4
 # 1 2 3
 # 1 2
@@ -49,7 +49,7 @@
 #         print(chr(64+j), end = " ")
 #     print("")
 
-# A 
+# A
 # A B
 # A B C
 # A B C D
@@ -66,7 +66,7 @@
 #         print(chr(64+j), end = " ")
 #     print("")
 
-# A B C D E 
+# A B C D E
 # A B C D
 # A B C
 # A B
@@ -80,8 +80,122 @@
 #         num += 1
 #     print("")
 
-# 1 
+# 1
 # 2 3
 # 4 5 6
 # 7 8 9 10
 # 11 12 13 14 15
+
+# Factorial
+
+# num = int(input("Enter number"))
+# fact = 1
+# for i in range(1,num):
+#     fact = fact * i
+# print(fact)
+
+# Reverse string without using bulit in function or slicing.
+
+# num = "12345"
+# rev = " "
+# for i in num:
+#     rev = i + rev
+# print(rev)
+
+# Using Slicing :
+# num = "56789"
+# rev = num[::-1]
+# print(rev)
+# ⭐ Simple One-Line Explanation (Interview)
+
+# We reverse the string by prepending each character to the result, so the last character becomes the first.
+
+# Palindrom Check
+# name = "nayan"
+# n = name == name[::-1]
+# print(n)
+
+
+# Given a string S, create:
+# s1 → characters at odd positions
+# s2 → characters at even positions
+# ⚠️ Important: Positions usually mean 1-based indexing in such questions.
+# So:
+# Odd places → 1st, 3rd, 5th...
+# Even places → 2nd, 4th, 6th...
+
+# alpha = "programming"
+# s1 = ""
+# s2 = ""
+# for i in range(len(alpha)):
+#     if (i+1) % 2 == 0 :
+#         s1 += alpha[i]
+#     else:
+#         s2 += alpha[i]
+# print(s1,s2)
+
+# arr = [15, 19, 21, 27, 13]
+# arr.sort()
+# min_diff =
+# for i in range(len(arr) - 1):
+#     diff = abs(arr[i] - arr[i+1])
+#     if diff < min_diff:
+#         min_diff = diff
+# print(min_diff)
+
+
+# Count frequency in string
+
+# s = "hhsseuffhshhriiii"
+# ch = {}
+# for i in s:
+#     if i in ch:
+#         ch[i] += 1
+#     else:
+#         ch[i] = 1
+# print(ch)
+
+
+# from collections import Counter
+# s = "hhsseuffhshhriiii"
+# freq = Counter(s)
+# print(freq)
+
+
+# find prime number between 1,10
+
+# def prime(n):
+#     for i in range(1,n+1):
+#         count=0
+#         if n> 1:
+        
+#             for j in range(2,i+1):
+#                 if i%j==0:
+#                  count+=1
+#             if count==1:
+#                 print(i)
+# prime(10)
+
+
+# Code for showing how to achieve Encapsulation :
+
+# class Student():
+#     def __init__(self, name, age, marks):
+#         self.name = name
+#         self.age = age
+#         self.__marks = marks
+#     def getMarks(self,marks):
+#         return self.__marks
+        
+#     def setMarks(self,newmarks):
+#         if newmarks <= 100 : 
+#             self.__marks = newmarks
+#         else : 
+#             print("Invalid marks")
+#     def display(self):
+#         print(f"this is the {self.name} having {self.age} age having marks {self.__marks}") 
+# e = Student("Siddesh",56, 99)
+
+# print(e.getMarks())
+# e.setMarks(39)
+# print(e.getMarks())
