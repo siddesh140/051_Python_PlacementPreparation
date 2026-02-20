@@ -221,12 +221,6 @@
 #         print("weak number 😁")
 # strong(6)
 
-
-def fact(n):
-    f = 1 
-    for i in range(1, n+1):
-        f = f * i
-    return f
     
 # or -------- We can write in this type also which is easy pythonic way, by converting integer into string by which we can iterate number to extract digit and after that using factorial function we can check total value.
 
@@ -246,7 +240,6 @@ def fact(n):
 #     print("Weak")
     
 
-
 # Find Duplicate : 
 
 # num = [3,2,3,4,5,4,3,5,6]
@@ -258,3 +251,111 @@ def fact(n):
 #     else: 
 #         seen.append(i)
 # print(seen,duplicates)
+<<<<<<< HEAD
+=======
+
+
+# To find vowels from given string
+
+# line = "programming"
+# vowels = "aeiou"
+# only_vowel = []
+# for i in line:
+#     if i in vowels:
+#         only_vowel.append(i)
+# print(only_vowel)
+
+# Count Vowels from Given String
+
+# line = "programming"
+# vowels = "aeiou"
+# count = sum(1 for ch in line if ch in vowels)
+# print(count)
+
+
+# Count occurrences of a character in string 
+
+# line = "Programming"
+# count1 = line.lower().count("p")
+# print(count1)
+
+
+# To revers number : This following method can be used for charecters string also.
+
+# num = "12345"
+# rev = " "
+# for i in num:
+#     rev = i + rev
+# print(rev)
+
+
+# Armstrong Number : a number with n digits, it is an Armstrong number if the sum of each digit raised to the power of n equals the original number.
+
+# num = 1634 
+# count = sum((int(i)**4 for i in str(num)))
+# if count == num:
+#     print("Its an Armstrong number")
+# else:
+#     print("Not Armstrong Number")
+
+
+# Count length of string without using len() function: this will includes all spaces also.
+
+# line = "jfshuiwgfe"
+# count = 0
+# for i in line:
+#     count += 1
+# print(count)
+
+# Count the words in the string
+# line = "I love Java Programming"    
+# print(len(line.split()))   #This will only give count of words.
+
+
+# To find LCM :
+
+# import math
+# a,b = 2,5
+# print(abs(a*b))
+
+# To find 2nd Highest number
+
+# Here we are removing duplicates by converting list into set and using sorted, set will be in ascending order then by using slicing we can get 2nd highest number
+
+# num = [2,5,4,3,6,7,5,4,4]
+# count = sorted(set(num))[-2]
+# print(count)
+
+# Without sorting or built in function : 
+# num = [2,5,4,3,6,7,5,4,4]
+# largest = float("-inf")
+# second  = float("-inf")
+
+# for i in num:
+#     if i > largest:
+#         largest = i
+#         second = largest
+#     elif i > second and i != largest:
+#         second = i
+# print(second)
+
+
+# Check Anagram :  Do strings anagram hote hain agar:
+# Same characters
+# Same frequency
+# Order matter nahi karta
+
+# s1 = "silent"
+# s2 = "listen"
+
+# By using sorted method:
+# if sorted(s1) == sorted(s2):
+#     print("Anagram")
+# else : 
+#     print("Not Anagram")
+
+# Without using sorted method : 
+# from collections import Counter
+# if Counter(s1) == Counter(s2):
+#     print("Anagram")
+
