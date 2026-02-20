@@ -228,7 +228,7 @@ def fact(n):
         f = f * i
     return f
     
-# or -------- We can write in this type also which is easy pythonic way, by converting integer into string by which we can iterate number to extract digit and after that using factorial function we can chech total value.
+# or -------- We can write in this type also which is easy pythonic way, by converting integer into string by which we can iterate number to extract digit and after that using factorial function we can check total value.
 
 # def fact(n):
 #     f = 1 
