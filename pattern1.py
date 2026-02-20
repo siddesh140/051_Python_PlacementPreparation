@@ -201,29 +201,50 @@
 # print(e.getMarks())
 
 # To find the given number is strong number or not
+# def fact(n):
+#    f = 1 
+#    for i in range(1, n+1):
+#        f = f * i
+#    return f
+
+
+# def strong(n):
+#     temp = n
+#     total = 0
+#     while temp > 0 :
+#         digit = temp % 10
+#         total = total + fact(digit)
+#         temp = temp//10
+#     if n == total:
+#         print("strong number")
+#     else:
+#         print("weak number 😁")
+# strong(6)
+
+
 def fact(n):
-   f = 1 
-   for i in range(1, n+1):
-       f = f * i
-   return f
+    f = 1 
+    for i in range(1, n+1):
+        f = f * i
+    return f
+    
+# or -------- We can write in this type also which is easy pythonic way, by converting integer into string by which we can iterate number to extract digit and after that using factorial function we can chech total value.
 
-
-def strong(n):
-    temp = n
-    total = 0
-    while temp > 0 :
-        digit = temp % 10
-        total = total + fact(digit)
-        temp = temp//10
-    if n == total:
-        print("strong number")
-    else:
-        print("weak number 😁")
-strong(6)
-
-
-
-
+# def fact(n):
+#     f = 1 
+#     for i in range(1, n+1):
+#         f = f * i
+#     return f
+    
+# num = 40585
+# total = 0
+# for i in str(num):
+#     total = total  + fact(int(i))
+# if total == num:
+#     print("Strong")
+# else:
+#     print("Weak")
+    
 
 
 # Find Duplicate : 
