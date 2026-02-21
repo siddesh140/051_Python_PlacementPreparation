@@ -251,8 +251,7 @@
 #     else: 
 #         seen.append(i)
 # print(seen,duplicates)
-<<<<<<< HEAD
-=======
+
 
 
 # To find vowels from given string
@@ -359,3 +358,9 @@
 # if Counter(s1) == Counter(s2):
 #     print("Anagram")
 
+
+import sys
+li = [1,2,3]
+tu = (1,2,3)
+print(sys.getsizeof(li))
+print(sys.getsizeof(tu))
