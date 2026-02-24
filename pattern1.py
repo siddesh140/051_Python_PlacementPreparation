@@ -359,8 +359,15 @@
 #     print("Anagram")
 
 
-import sys
-li = [1,2,3]
-tu = (1,2,3)
-print(sys.getsizeof(li))
-print(sys.getsizeof(tu))
+
+# print(ord(65))
+
+# a = "55-10"
+# print(eval(a))
+
+dict = {"a" : 1, "b" : 2, "c" : 3}
+# l_k = list(dict)
+# l_k = [*dict]  #using unpacking operator
+l_k = dict.keys()  # using key function
+print(l_k)
+
