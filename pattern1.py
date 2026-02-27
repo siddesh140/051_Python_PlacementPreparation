@@ -365,9 +365,27 @@
 # a = "55-10"
 # print(eval(a))
 
-dict = {"a" : 1, "b" : 2, "c" : 3}
+# If want to print only key from the dict
+
+# dict = {"a" : 1, "b" : 2, "c" : 3}
 # l_k = list(dict)
 # l_k = [*dict]  #using unpacking operator
-l_k = dict.keys()  # using key function
-print(l_k)
+# l_k = dict.keys()  # using key function
+# print(l_k)
+
+# How to unpack List.
+
+# a = [1,2,3,4,5]
+# print(*a)
+
+
+x = (10, 20, 30)
+print(id(x))
+y = (40, 50, 60)
+x = x+y
+print(id(x))
+# print(x)
+
+
+
 

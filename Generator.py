@@ -1,20 +1,24 @@
 # What is yield?
 
-# yield is a keyword in Python used to create a generator. It allows a function to return a value while saving its state,
-# so it can resume execution from the same point later.
+# yield is a keyword in Python used to create a generator. It allows a function to return a value while
+# saving its state, so it can resume execution from the same point later.
+
 
 # 📦 Normal Function vs Generator
 # Normal Function
 def normal():
     return 1
 
+
 # Returns once
 # Execution stops
 # Memory freed
 
+
 # Generator Function
 def gen():
     yield 1
+
 
 # Does NOT execute immediately
 # Returns a generator object
@@ -25,11 +29,13 @@ def gen():
 
 # Example:
 
+
 def count():
     print("Start")
     yield 1
     yield 2
     yield 3
+
 
 g = count()
 
@@ -98,10 +104,12 @@ data = (x for x in range(10_000_000))
 
 # How to call Generator ?
 
+
 def func():
     yield 10
     yield 13
     print("Hello")
+
 
 print(func())
 
@@ -117,4 +125,3 @@ print("------")
 
 for i in func():
     print(i)
-
