@@ -8,6 +8,7 @@
 # Normal Function
 def normal():
     return 1
+    
 
 
 # Returns once
