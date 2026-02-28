@@ -384,8 +384,7 @@ print(id(x))
 y = (40, 50, 60)
 x = x+y
 print(id(x))
-# print(x)
-
+print(x)
 
 
 
