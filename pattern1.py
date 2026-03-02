@@ -238,7 +238,9 @@
 # strong(6)
 
 
-# or -------- We can write in this type also which is easy pythonic way, by converting integer into string by which we can iterate number to extract digit and after that using factorial function we can check total value.
+# or -------- We can write in this type also which is easy pythonic way, by converting integer
+# into string by which we can iterate number to extract digit and after that using factorial function we
+# can check total value.
 
 # def fact(n):
 #     f = 1
@@ -303,7 +305,8 @@
 # print(rev)
 
 
-# Armstrong Number : a number with n digits, it is an Armstrong number if the sum of each digit raised to the power of n equals the original number.
+# Armstrong Number : a number with n digits, it is an Armstrong number if the sum of each digit raised 
+# to the power of n equals the original number.
 
 # num = 1634
 # count = sum((int(i)**4 for i in str(num)))
@@ -374,7 +377,9 @@
 #     print("Anagram")
 
 
-# print(ord(65))
+# print(ord('A'))  ->  use to convert charecter to integer
+# print(chr(65))  -> use to convert integer to charecter
+
 
 # a = "55-10"
 # print(eval(a))
