@@ -110,6 +110,22 @@
 
 # We reverse the string by prepending each character to the result, so the last character becomes the first.
 
+# By using Two Pointer  approach :
+
+# left = 0
+# right = len(name)-1
+# flag = False
+# while left < right :
+#     if name[left].lower() != name[right].lower():
+#         flag = False
+#         break
+#     else:
+#         left += 1
+#         right -= 1
+#         flag = True
+
+# print(flag)
+
 # Palindrom Check
 # name = "nayan"
 # n = name == name[::-1]
@@ -168,7 +184,7 @@
 #     for i in range(1,n+1):
 #         count=0
 #         if n> 1:
-        
+
 #             for j in range(2,i+1):
 #                 if i%j==0:
 #                  count+=1
@@ -186,14 +202,14 @@
 #         self.__marks = marks
 #     def getMarks(self,marks):
 #         return self.__marks
-        
+
 #     def setMarks(self,newmarks):
-#         if newmarks <= 100 : 
+#         if newmarks <= 100 :
 #             self.__marks = newmarks
-#         else : 
+#         else :
 #             print("Invalid marks")
 #     def display(self):
-#         print(f"this is the {self.name} having {self.age} age having marks {self.__marks}") 
+#         print(f"this is the {self.name} having {self.age} age having marks {self.__marks}")
 # e = Student("Siddesh",56, 99)
 
 # print(e.getMarks())
@@ -202,7 +218,7 @@
 
 # To find the given number is strong number or not
 # def fact(n):
-#    f = 1 
+#    f = 1
 #    for i in range(1, n+1):
 #        f = f * i
 #    return f
@@ -221,15 +237,15 @@
 #         print("weak number 😁")
 # strong(6)
 
-    
+
 # or -------- We can write in this type also which is easy pythonic way, by converting integer into string by which we can iterate number to extract digit and after that using factorial function we can check total value.
 
 # def fact(n):
-#     f = 1 
+#     f = 1
 #     for i in range(1, n+1):
 #         f = f * i
 #     return f
-    
+
 # num = 40585
 # total = 0
 # for i in str(num):
@@ -238,9 +254,9 @@
 #     print("Strong")
 # else:
 #     print("Weak")
-    
 
-# Find Duplicate : 
+
+# Find Duplicate :
 
 # num = [3,2,3,4,5,4,3,5,6]
 # seen = []
@@ -248,10 +264,9 @@
 # for i in num:
 #     if i in seen and i not in duplicates:
 #         duplicates.append(i)
-#     else: 
+#     else:
 #         seen.append(i)
 # print(seen,duplicates)
-
 
 
 # To find vowels from given string
@@ -272,7 +287,7 @@
 # print(count)
 
 
-# Count occurrences of a character in string 
+# Count occurrences of a character in string
 
 # line = "Programming"
 # count1 = line.lower().count("p")
@@ -290,7 +305,7 @@
 
 # Armstrong Number : a number with n digits, it is an Armstrong number if the sum of each digit raised to the power of n equals the original number.
 
-# num = 1634 
+# num = 1634
 # count = sum((int(i)**4 for i in str(num)))
 # if count == num:
 #     print("Its an Armstrong number")
@@ -307,7 +322,7 @@
 # print(count)
 
 # Count the words in the string
-# line = "I love Java Programming"    
+# line = "I love Java Programming"
 # print(len(line.split()))   #This will only give count of words.
 
 
@@ -325,7 +340,7 @@
 # count = sorted(set(num))[-2]
 # print(count)
 
-# Without sorting or built in function : 
+# Without sorting or built in function :
 # num = [2,5,4,3,6,7,5,4,4]
 # largest = float("-inf")
 # second  = float("-inf")
@@ -350,14 +365,13 @@
 # By using sorted method:
 # if sorted(s1) == sorted(s2):
 #     print("Anagram")
-# else : 
+# else :
 #     print("Not Anagram")
 
-# Without using sorted method : 
+# Without using sorted method :
 # from collections import Counter
 # if Counter(s1) == Counter(s2):
 #     print("Anagram")
-
 
 
 # print(ord(65))
@@ -382,9 +396,6 @@
 x = (10, 20, 30)
 print(id(x))
 y = (40, 50, 60)
-x = x+y
+x = x + y
 print(id(x))
 print(x)
-
-
-
