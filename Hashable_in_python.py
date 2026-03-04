@@ -99,11 +99,13 @@ locations = {
     [40.7128, -74.0060]: 'New York'  # ❌ TypeError
 }
 Interview Question Answers:
-Q: Why can't lists be dictionary keys? A: Because lists are mutable (can change), so their hash value would become unreliable. Dictionaries rely on hash values being constant for fast lookups.
+Q: Why can't lists be dictionary keys? A: Because lists are mutable (can change),
+ so their hash value would become unreliable. Dictionaries rely on hash values being constant for fast lookups.
 
 Q: Can you have a tuple inside a tuple as a key? A: Yes! {(1, (2, 3)): 'value'} ✅ - tuples are immutable and hashable.
 
-Q: What about a tuple containing a list? A: No! {(1, [2, 3]): 'value'} ❌ - the inner list is non-hashable, making the whole tuple non-hashable.
+Q: What about a tuple containing a list? A: No! {(1, [2, 3]): 'value'} ❌ - the inner list is non-hashable,
+ making the whole tuple non-hashable.
 
 Quick Test:
 Python

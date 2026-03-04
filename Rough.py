@@ -45,11 +45,27 @@ import copy
 # print(f"Deep: {time.time() - start}")     # ~0.5 seconds
 
 # Dictionaries use hash values to find values quickly (O(1))
-person = {'name': 'Alice', 'age': 25}
+# person = {'name': 'Alice', 'age': 25}
 
 # When you do person['name'], Python:
 # 1. Calculates hash of 'name'
 # 2. Uses that hash to find the value instantly
 
-print(hash('name'))  # Output: -8835372099674341033 (consistent)
-print(hash('age'))  # Output: -8835372099674341033 (consistent)
+# print(hash('name'))  # Output: -8835372099674341033 (consistent)
+# print(hash('age'))  # Output: -8835372099674341033 (consistent)
+
+# d = {}
+
+# d[True] = "yes"
+# d[1] = "no"
+
+# print(True == 1)
+
+# d = {1: "a", 2: "b"}
+# d[3] = "c"
+# print(len(d))
+
+d = {}
+
+d[(1, 2)] = "hello"
+print(d)
