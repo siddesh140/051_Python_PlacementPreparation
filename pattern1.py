@@ -108,7 +108,9 @@
 # print(rev)
 # ⭐ Simple One-Line Explanation (Interview)
 
-# We reverse the string by prepending each character to the result, so the last character becomes the first.
+# We reversed the string by prepending each character to the result, so the last character becomes the first.
+
+# Palindrom Check
 
 # By using Two Pointer  approach :
 
@@ -126,7 +128,8 @@
 
 # print(flag)
 
-# Palindrom Check
+# By using Slicing method
+
 # name = "nayan"
 # n = name == name[::-1]
 # print(n)
