@@ -307,6 +307,15 @@
 #     rev = i + rev
 # print(rev)
 
+#  method to reverse the integer
+
+# rev = 0
+# while num > 0:
+#     digit = num % 10
+#     rev = (rev * 10) + digit
+#     num = num // 10
+# print(rev)
+
 
 # Armstrong Number : a number with n digits, it is an Armstrong number if the sum of each digit raised 
 # to the power of n equals the original number.
@@ -407,3 +416,17 @@ y = (40, 50, 60)
 x = x + y
 print(id(x))
 print(x)
+
+
+# Move Zeroes (Easy/Medium)
+# Given an array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+# Why they ask this: It’s the classic Two-Pointer problem (similar to your palindrome logic).
+
+num = [0, 1, 2, 0, 3, 4]
+slow = 0
+for i in range(len(num)):
+    if num[i] != 0 :
+    #swap the elements.
+        num[slow], num[i] = num[i], num[slow]
+        slow += 1
+print(num)

@@ -11,8 +11,8 @@ d = {
 
 Internally:
 
-key → hash → memory index → value
-Example
+# key → hash → memory index → value
+# Example
 d["age"]
 
 Python steps:
@@ -99,8 +99,8 @@ print(freq)
 Output:
 
 {1:2, 2:1, 3:3}
-Better Way
 
+Better Way:
 Using Counter
 
 from collections import Counter
