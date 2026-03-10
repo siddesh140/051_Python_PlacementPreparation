@@ -1,6 +1,6 @@
 # Filter :-
-#
-# The filter() function is used to extract elements from an iterable 
+
+# The filter() function is used to extract elements from an iterable
 # (like a list, tuple, or set) that satisfy a given condition.
 #
 # It works by applying a function to each element and keeping only those
@@ -17,19 +17,23 @@
 # Since it is lazily evaluated, values are produced only when iterated.
 # To see results, we convert it to a list or iterate over it.
 
+
 def is_even(num):
     return num % 2 == 0
+
 
 nums = [2, 4, 6, 7, 8]
 
 filtered = filter(is_even, nums)
 
-print(list(filtered))   # [2, 4, 6, 8]
+print(list(filtered))  # [2, 4, 6, 8]
 
 # ⚠️ Important Concept
 
+
 def add(num):
     return num + num
+
 
 filtered = filter(add, nums)
 
@@ -44,7 +48,7 @@ filtered = filter(add, nums)
 
 # ✅ Using Lambda (Common in Interviews)
 
-list(filter(lambda x: x % 2 == 0, [1,2,3,4]))
+list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4]))
 # Output: [2, 4]
 
 # 🎯 Key Interview Points
@@ -56,18 +60,18 @@ list(filter(lambda x: x % 2 == 0, [1,2,3,4]))
 # Used for selection, not transformation
 # --------------------------------------------------------------------------------------------------------
 
-#Map :- 
+# Map :-
 
-# map() function in Python applies a given function to each element of an iterable (list, tuple, set, etc.) 
+# map() function in Python applies a given function to each element of an iterable (list, tuple, set, etc.)
 # and returns a map object (iterator). It is a higher-order function used for uniform element-wise
 # transformations, enabling concise and efficient code.
 
 # map() :-
 #
-# The map() function is used to apply a transformation function 
+# The map() function is used to apply a transformation function
 # to each element of an iterable (like a list, tuple, etc.).
 #
-# It processes every element and returns a new iterator 
+# It processes every element and returns a new iterator
 # containing the transformed values.
 #
 # Syntax:
@@ -81,11 +85,14 @@ list(filter(lambda x: x % 2 == 0, [1,2,3,4]))
 
 # ✅ Example 1: Simple Transformation
 
+
 def square(num):
     return num * num
+
+
 nums = [1, 2, 3, 4]
 mapped = map(square, nums)
-print(list(mapped))   # [1, 4, 9, 16]
+print(list(mapped))  # [1, 4, 9, 16]
 
 # ✅ Using Lambda
 
@@ -113,7 +120,7 @@ list(map(lambda x: x * 2, [1, 2, 3, 4]))
 
 # Feature	        map()	            filter()
 # Purpose	       Transform	        Select
-# Function        Return	Any value	Boolean
+# Function        Return Any value	Boolean
 # Output Size	  Same as input	    Same or smaller
 # Return Type	    Iterator	        Iterator
 
@@ -125,11 +132,11 @@ list(map(lambda x: x * 2, [1, 2, 3, 4]))
 
 # Instead of:
 
-list(map(lambda x: x*2, nums))
+list(map(lambda x: x * 2, nums))
 
 # People prefer:
 
-[x*2 for x in nums]
+[x * 2 for x in nums]
 
 # Because:
 
@@ -140,5 +147,3 @@ list(map(lambda x: x*2, nums))
 
 # While map() is useful for functional-style programming, list comprehensions are generally preferred
 #    in modern Python for better readability.
-
-
