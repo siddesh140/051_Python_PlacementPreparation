@@ -1,4 +1,3 @@
-
 # Factorial
 
 # num = int(input("Enter number"))
@@ -230,7 +229,7 @@
 # print(rev)
 
 
-# Armstrong Number : a number with n digits, it is an Armstrong number if the sum of each digit raised 
+# Armstrong Number : a number with n digits, it is an Armstrong number if the sum of each digit raised
 # to the power of n equals the original number.
 
 # num = 1634
@@ -323,23 +322,39 @@
 # print(*a)
 
 
-x = (10, 20, 30)
-print(id(x))
-y = (40, 50, 60)
-x = x + y
-print(id(x))
-print(x)
+# x = (10, 20, 30)
+# print(id(x))
+# y = (40, 50, 60)
+# x = x + y
+# print(id(x))
+# print(x)
 
 
 # Move Zeroes (Easy/Medium)
 # Given an array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 # Why they ask this: It’s the classic Two-Pointer problem (similar to your palindrome logic).
 
+# num = [0, 1, 2, 0, 3, 4]
+# slow = 0
+# for i in range(len(num)):
+#     if num[i] != 0:
+#         # swap the elements
+#         num[slow], num[i] = num[i], num[slow]
+#         slow += 1
+# print(num)
+
+# Using Two pointer technique we can maintain time complexity.
+
 num = [0, 1, 2, 0, 3, 4]
-slow = 0
-for i in range(len(num)):
-    if num[i] != 0 :
-    #swap the elements.
-        num[slow], num[i] = num[i], num[slow]
-        slow += 1
+first = 0
+for second in range(len(num)):
+    if num[second] != 0:
+        num[first], num[second] = num[second], num[first]
+        first += 1
+
 print(num)
+
+# I use two pointers where one pointer tracks the position for non-zero elements and the other iterates 
+# through the array. When a non-zero element is found, I swap it with the position pointed by the first 
+# pointer.
+    
