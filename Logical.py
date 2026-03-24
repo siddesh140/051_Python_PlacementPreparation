@@ -26,19 +26,15 @@
 
 # By using Two Pointer  approach :
 
-# left = 0
-# right = len(name)-1
-# flag = False
-# while left < right :
-#     if name[left].lower() != name[right].lower():
-#         flag = False
-#         break
-#     else:
+# def palindrom(s1):
+#     left, right = 0, len(s1) - 1
+#     while left < right:
+#         if s1[left] != s1[right]:
+#             return False
 #         left += 1
 #         right -= 1
-#         flag = True
-
-# print(flag)
+#     return True
+# print(palindrom("nayan"))
 
 # By using Slicing method
 
@@ -55,15 +51,10 @@
 # Odd places → 1st, 3rd, 5th...
 # Even places → 2nd, 4th, 6th...
 
-# alpha = "programming"
-# s1 = ""
-# s2 = ""
-# for i in range(len(alpha)):
-#     if (i+1) % 2 == 0 :
-#         s1 += alpha[i]
-#     else:
-#         s2 += alpha[i]
-# print(s1,s2)
+alpha = "programming"
+s1 = alpha[1::2]
+s2 = alpha[::1]
+
 
 # arr = [15, 19, 21, 27, 13]
 # arr.sort()
@@ -98,7 +89,7 @@
 # def prime(n):
 #     for i in range(1,n+1):
 #         count=0
-#         if n> 1:
+#         if n > 1:
 
 #             for j in range(2,i+1):
 #                 if i%j==0:
@@ -300,6 +291,19 @@
 # if Counter(s1) == Counter(s2):
 #     print("Anagram")
 
+# def anagram(s1,s2):
+#     alpha = [0] * 26
+#     if len(s1) != len(s2):
+#         return False
+#     for i in range(len(s1)):
+#         alpha[ord(s1[i].lower()) - ord('a')] += 1
+#         alpha[ord(s2[i].lower()) - ord('a')] -= 1
+
+#     for i in alpha:
+#         if i != 0:
+#             return False
+#     return True
+# print(anagram("listen","hujjjj"))
 
 # print(ord('A'))  ->  use to convert charecter to integer
 # print(chr(65))  -> use to convert integer to charecter
@@ -358,3 +362,15 @@ print(num)
 # through the array. When a non-zero element is found, I swap it with the position pointed by the first 
 # pointer.
     
+
+
+# Jack loves Sundays. He wants to find out how many Sundays will occur in a month if he knows two things:
+# - The day on which the month starts (e.g., Monday, Tuesday, etc.)
+# - The total number of days in that month
+# Your task is to determine how many Sundays fall in that month based on this information.
+
+# month_start = "Monday"
+# Num_days = 31
+# week = { "mon" : 1, "tue" : 2, "wen" : 3, "thus" : 4, "fri" : 5, "sat" : 6, "sun" : 7}
+# res = week["sun"] + Num_days
+# print(int(res/7))
