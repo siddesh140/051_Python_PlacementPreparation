@@ -349,14 +349,14 @@ s2 = alpha[::1]
 
 # Using Two pointer technique we can maintain time complexity.
 
-num = [0, 1, 2, 0, 3, 4]
-first = 0
-for second in range(len(num)):
-    if num[second] != 0:
-        num[first], num[second] = num[second], num[first]
-        first += 1
+# num = [0, 1, 2, 0, 3, 4]
+# first = 0
+# for second in range(len(num)):
+#     if num[second] != 0:
+#         num[first], num[second] = num[second], num[first]
+#         first += 1
 
-print(num)
+# print(num)
 
 # I use two pointers where one pointer tracks the position for non-zero elements and the other iterates 
 # through the array. When a non-zero element is found, I swap it with the position pointed by the first 
@@ -374,3 +374,23 @@ print(num)
 # week = { "mon" : 1, "tue" : 2, "wen" : 3, "thus" : 4, "fri" : 5, "sat" : 6, "sun" : 7}
 # res = week["sun"] + Num_days
 # print(int(res/7))
+
+# sort the given array
+
+# ls = [4,3,8,6,9,1,4,8]
+# for i in range(len(ls)):
+#     for j in range(len(ls)-i-1):
+#         if ls[j] > ls[j+1]:
+#             ls[j], ls[j+1] = ls[j+1] , ls[j]
+# print(ls)
+# this approach(Bubble sort) has more time complexcity n^2
+
+# the below code is one of the way of insertion , it has also same time complexcity
+ls = [4,3,8,6,9,1,4,8]
+for i in range(len(ls)):
+    for j in range(i,len(ls)):
+        if ls[i] > ls[j]:
+            ls[i], ls[j] = ls[j], ls[i]
+
+print(ls)
+
