@@ -205,7 +205,7 @@ s2 = alpha[::2]
 # To revers number : This following method can be used for charecters string also.
 
 # num = "12345"
-# rev = " "
+# rev = ""
 # for i in num:
 #     rev = i + rev
 # print(rev)
@@ -252,7 +252,8 @@ s2 = alpha[::2]
 
 # To find 2nd Highest number
 
-# Here we are removing duplicates by converting list into set and using sorted, set will be in ascending order then by using slicing we can get 2nd highest number
+# Here we are removing duplicates by converting list into set and using sorted, set will be in ascending order 
+# then by using slicing we can get 2nd highest number
 
 # num = [2,5,4,3,6,7,5,4,4]
 # count = sorted(set(num))[-2]
@@ -394,3 +395,85 @@ for i in range(len(ls)):
 
 print(ls)
 
+
+# Given an integer array 'nums', return 'true' if any value appears at least twice in the array, 
+# and return 'false' if every element is distinct.
+# num = [1,2,3,1]
+# def dupl(x):
+#     if len(num) != len(set(num)):
+#         print(True)
+#     else:
+#         print(False)
+# dupl(num)
+
+
+# find the freq of char in string
+
+# name = "hello"
+# cnt = {}
+# for i in name:
+#     if i in cnt:
+#         cnt[i] += 1
+#     else:
+#         cnt[i] = 1
+# print(cnt)
+
+# Find the frequency of each word in a sentence.
+
+# line = "the cat sat on the mat the cat"
+# freq = {}
+# for i in line.split():
+#     if i in freq:
+#         freq[i] += 1
+#     else:
+#         freq[i] = 1
+# print(freq)
+
+
+# Find the character that appears the most in a string.
+
+# line = "progrooooamming" 
+# freq = {}
+# # 1. Build the frequency dictionary (This part was good!)
+# for i in line:
+#     if i in freq:
+#         freq[i] += 1
+#     else:
+#         freq[i] = 1
+
+# # 2. Find the maximum
+# max_char = ""
+# max_count = 0
+
+# for char, count in freq.items(): # Use .items() to get key and value
+#     if count > max_count:        # Check if current count is bigger than the best so far
+#         max_count = count        # Update the highest count
+#         max_char = char          # Update the character that owns that count
+
+# print("Max Character:", max_char)
+# print("Max Count:", max_count)
+
+
+# Remove duplicate characters keeping original order.
+
+# line = "programming"
+# seen = set()
+# result  = ""
+# for i in line:
+#     if i not in seen:
+#         result += i
+#         seen.add(i)
+# print(result)
+
+# name =  "hello world"
+# rev = name.split()
+# result = []
+# # print(rev)
+# for i in rev:
+#     result.append(rev[::-1])
+# print(" ".join(result))
+
+line = "i love python"
+newline = line.split()
+result = reversed(newline)
+print(" ".join(result))
