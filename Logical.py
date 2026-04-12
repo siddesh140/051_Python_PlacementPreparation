@@ -53,7 +53,7 @@
 
 alpha = "programming"
 s1 = alpha[1::2]
-s2 = alpha[::1]
+s2 = alpha[::2]
 
 
 # arr = [15, 19, 21, 27, 13]

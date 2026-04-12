@@ -2,7 +2,7 @@
 #     if len(s1) != len(S2):
 #         return False
 #     freq = {}
-    
+
 #     for char in s1:
 #         freq[char] = freq.get(char,o) + 1
 
@@ -39,7 +39,7 @@
 
 # sorting
 
-ls = [5,6,1,0,4,8,9]
+ls = [5, 6, 1, 0, 4, 8, 9]
 # bubble sort
 # for i in range(len(ls)):
 #     for j in range(len(ls)):
@@ -52,7 +52,7 @@ ls = [5,6,1,0,4,8,9]
 # for i in range(len(ls)):
 #     for j in range(i,len(ls)):
 #         if ls[i] > ls[j]:
-#              ls[i], ls[j] = ls[j], ls[i] 
+#              ls[i], ls[j] = ls[j], ls[i]
 
 # print(ls)
 
@@ -94,15 +94,93 @@ ls = [5,6,1,0,4,8,9]
 # print(cnt)
 # print(ls1[:cnt])
 
-ls = [5,7,4,9,8,1,2]
+# ls = [5,7,4,9,8,1,2]
 
-for i in range(len(ls)):
-    for j in range(len(ls)-i-1):
-        if ls[j] > ls[j+1]:
-            ls[j], ls[j+1] = ls[j+1] , ls[j]
-print(ls)
+# for i in range(len(ls)):
+#     for j in range(len(ls)-i-1):
+#         if ls[j] > ls[j+1]:
+#             ls[j], ls[j+1] = ls[j+1] , ls[j]
+# print(ls)
+
+# Factorial
+
+# def fact(n):
+#     fact = 1
+#     for i in range(1,n+1):
+#         fact = fact * i
+#     return fact
+# fact(5)
+
+# name = "mango"
+# # name1 = name[::-1]
+# # print(name1)
+# rev = ""
+
+# for i in name:
+#     rev = i + rev
+# print(rev)
+
+# num = 12345
+# temp = num
+# total = 0
+# while num > 0:
+#     digit = num % 10
+#     total = total * 10  + digit
+#     num = num // 10
+# print(total)
+
+# s = "hhsseuffhshhriiii"
+
+# ch = {}
+
+# for i in s:
+#     if i in ch:
+#         ch[i] += 1
+#     else:
+#         ch[i] = 1
+# print(ch)
+
+# num = 5
+
+# a,b = 0,1
+# while True:
+#     a ,b = b , a+b
+#     if a >= 5 and a <=  15:
+#         print(a)
+#     if a > 15:
+#         break
 
 
+# num = 153
+# one = 0
+# new_num = str(num)
+# for i in new_num:
+#     one += int(i)**len(new_num)
+# print(one)
+# if one == num:
+#     print(True)
 
+# num = [4,3,4,1,1,4,3]
+# seen = {}
+# for i in num:
+#     seen[i] += 1
+# print(seen.values)
 
+# num = [4, 3, 6, 5, 7, 9]
+# # large = max(num)
+# # max1 = 0
+# # for i in num:
+# #     if i > max1 and i < large:
+# #         max1 = i
+# # print(max1)
+# new = sorted(num)
+# print(new[::-1][1])
+
+v = 12345
+total = 0
+while v > 0:
+    digit  = v % 10
+    total = total * 10 + digit
+    v = v // 10
+print(total)
 
