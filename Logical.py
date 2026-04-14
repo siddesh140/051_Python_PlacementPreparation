@@ -51,9 +51,9 @@
 # Odd places → 1st, 3rd, 5th...
 # Even places → 2nd, 4th, 6th...
 
-alpha = "programming"
-s1 = alpha[1::2]
-s2 = alpha[::2]
+# alpha = "programming"
+# s1 = alpha[1::2]
+# s2 = alpha[::2]
 
 
 # arr = [15, 19, 21, 27, 13]
@@ -387,13 +387,13 @@ s2 = alpha[::2]
 # this approach(Bubble sort) has more time complexcity n^2
 
 # the below code is one of the way of insertion , it has also same time complexcity
-ls = [4,3,8,6,9,1,4,8]
-for i in range(len(ls)):
-    for j in range(i,len(ls)):
-        if ls[i] > ls[j]:
-            ls[i], ls[j] = ls[j], ls[i]
+# ls = [4,3,8,6,9,1,4,8]
+# for i in range(len(ls)):
+#     for j in range(i,len(ls)):
+#         if ls[i] > ls[j]:
+#             ls[i], ls[j] = ls[j], ls[i]
 
-print(ls)
+# print(ls)
 
 
 # Given an integer array 'nums', return 'true' if any value appears at least twice in the array, 
@@ -412,6 +412,7 @@ print(ls)
 # name = "hello"
 # cnt = {}
 # for i in name:
+
 #     if i in cnt:
 #         cnt[i] += 1
 #     else:
@@ -473,7 +474,16 @@ print(ls)
 #     result.append(rev[::-1])
 # print(" ".join(result))
 
-line = "i love python"
-newline = line.split()
-result = reversed(newline)
-print(" ".join(result))
+# line = "i love python"
+# newline = line.split()
+# result = reversed(newline)
+# print(" ".join(result))
+
+# Find the smallest number.
+
+# num = [-4, -1, 3, -5, -7, -1]
+# small = float("inf")
+# for i in num:
+#     if i < small:
+#         small = i
+# print(small)  # -7

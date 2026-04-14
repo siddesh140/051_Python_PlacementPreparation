@@ -311,12 +311,64 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 #     result.append(rev[::-1])
 # print(" ".join(result))
 
-line = "i love python"
-# result = ""
-newline = line.split()
-# for i in newline:
-#     result.append(i)[::-1]
+# line = "i love python"
+# # result = ""
+# newline = line.split()
+# # for i in newline:
+# #     result.append(i)[::-1]
+# # print(" ".join(result))
+
+# result = reversed(newline)
 # print(" ".join(result))
 
-result = reversed(newline)
-print(" ".join(result))
+# check palindrom
+
+# name = "Malayalam"
+# if name.lower() == name[::-1].lower():
+#     print("pal")
+
+# Usin Two Pointer Technique
+
+# name = "Malayalam"
+# i,j = 0, len(name)-1
+# is_pal = True
+# while i < j:
+#     if name[i].lower() != name[j].lower():
+#         is_pal = False
+#     i += 1
+#     j -= 1
+# print(is_pal)
+
+
+# num = 12345
+# a,b = 0,1
+# while a < num:
+#     print(a, end=" ")
+#     a,b = b, a+b
+
+# num = 10
+# count = 0
+# a, b = 0, 1
+
+# while count <  num:
+#     print(a, end=" ")
+#     # The magic line: a becomes b, and b becomes the sum of both
+#     a, b = b, a + b
+#     count += 1
+
+# name = "hello"
+# cnt = {}
+# for i in name:
+#     if i in cnt:
+#         cnt[i] += 1
+#     else:
+#         cnt[i] = 1
+# print(cnt)
+
+num = [-4, -1, 3, -5, -7, -1]
+
+small = float("inf")
+for i in num:
+    if i < small:
+        small = i
+print(small)  # -7
