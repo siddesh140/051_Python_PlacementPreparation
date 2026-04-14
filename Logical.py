@@ -487,3 +487,37 @@
 #     if i < small:
 #         small = i
 # print(small)  # -7
+
+
+# Remove duplicate characters keeping original order.
+# i am solving it with different approaches
+
+# line = "programming"
+# seen = []
+# for i in line:
+#     if i not in seen:
+#         seen.append(i)
+# print(seen)
+
+# line = "programming"
+# result = ""
+# for ch in line:
+#     if ch not in result:
+#         result += ch
+# print(result)
+
+# by above two approaches it gives O(n²) but following one gives o(n) becuase:
+# 🔥 Why this is best:
+# set lookup → O(1) (very fast)
+# Overall time complexity → O(n)
+# Clean + scalable
+
+# s = "programming"
+# seen = set()
+# result = ""
+# for ch in s:
+#     if ch not in seen:
+#         result += ch
+#         seen.add(ch)
+# print(result)
+

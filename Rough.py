@@ -179,7 +179,7 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 # def fact(x):
 #     fact = fact * x
 #     return fact
-    
+
 # v = 45
 # total = 0
 # while v > 0:
@@ -216,7 +216,7 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 # large = max(num)
 # second = 0
 # for i in num:
-    
+
 #     if i > second and i < large:
 #         second = i
 # print(second)
@@ -235,7 +235,7 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 # if Counter(name1) == Counter(name2):
 #     print("Anagram")
 
-# # Given an integer array 'nums', return 'true' if any value appears at least twice in the array, 
+# # Given an integer array 'nums', return 'true' if any value appears at least twice in the array,
 # # and return 'false' if every element is distinct.
 # num = [1,2,3,1]
 # def dupl(x):
@@ -270,7 +270,7 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 
 # Find the character that appears the most in a string.
 
-# line = "progrooooamming" 
+# line = "progrooooamming"
 # freq = {}
 # # 1. Build the frequency dictionary (This part was good!)
 # for i in line:
@@ -365,10 +365,73 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 #         cnt[i] = 1
 # print(cnt)
 
-num = [-4, -1, 3, -5, -7, -1]
+# find smallest number
 
-small = float("inf")
-for i in num:
-    if i < small:
-        small = i
-print(small)  # -7
+# num = [-4, -1, 3, -5, -7, -1]
+# small = float("inf")
+# for i in num:
+#     if i < small:
+#         small = i
+# print(small)  # -7
+
+# greet = "hello"
+# freq = {}
+# for i in greet:
+#     if i in freq:
+#         freq[i] += 1
+#     else:
+#         freq[i] = 1
+# print(freq)
+
+# Input = "the cat sat on the mat the cat"
+# # count = Input.split()
+# freq = {}
+# large = 0
+# max_char = ""
+# for i in Input:
+#     if i != " ":
+#         if i in freq:
+#             freq[i] += 1
+#         else:
+#             freq[i] = 1
+# for j in freq:
+#     if freq[j] > large:
+#         large = freq[j]
+#         max_char = j
+# print(freq)
+# print(f"most frequent charecter {max_char} with frequency {large}")
+
+
+# Remove duplicate characters keeping original order.
+# i am solving it with different approaches
+
+# line = "programming"
+# seen = []
+# for i in line:
+#     if i not in seen:
+#         seen.append(i)
+# print(seen)
+
+# line = "programming"
+# result = ""
+# for ch in line:
+#     if ch not in result:
+#         result += ch
+# print(result)
+
+# by above two approaches it gives O(n²) but following one gives o(n) becuase:
+# 🔥 Why this is best:
+# set lookup → O(1) (very fast)
+# Overall time complexity → O(n)
+# Clean + scalable
+
+# s = "programming"
+# seen = set()
+# result = ""
+# for ch in s:
+#     if ch not in seen:
+#         result += ch
+#         seen.add(ch)
+# print(result)
+
+
