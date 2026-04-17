@@ -434,4 +434,24 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 #         seen.add(ch)
 # print(result)
 
+# line = "enodesrever"
+# rev = ""
+# for i in line:
+#     rev = i + rev
+# print(rev)
 
+# line = "hello world"
+# rev = ""
+# for i in line.split():
+#     for j in i:
+#         rev = j + rev
+# print(rev)
+
+line = "hello world"
+words = line.split()
+rev = []
+
+for i in range(len(words), -1, -1):
+    rev.append(words[i])
+
+print(rev)

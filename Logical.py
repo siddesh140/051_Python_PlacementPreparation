@@ -521,3 +521,14 @@
 #         seen.add(ch)
 # print(result)
 
+# Reverse the order of words in a sentence.
+# Input: "I love Python" → Output: "Python love I"
+
+line = "hello world"
+words = line.split()
+rev = []
+
+for i in range(len(words), -1, -1):
+    rev.append(words[i])
+
+print(rev)
