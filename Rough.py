@@ -499,8 +499,22 @@ line = "racecar"
 # else:
 #     print(True)
 
-line = "asdff"
-if len(set(line)) == len(line):
-    print(True)
-else:
-    print(False)
+# line = "asdff"
+# if len(set(line)) == len(line):
+#     print(True)
+# else:
+#     print(False)
+
+# Count the number of vowels and consonants in a string.
+line = "hello world"
+vowels = "aeiou"
+v = 0
+c = 0
+for i in line:
+    if i != " ":
+        if i not in vowels:
+            c += 1
+        else :
+            v += 1
+print(v,c)
+    
