@@ -480,3 +480,19 @@ line = "racecar"
 #         print("ANagram")
 #     else:
 #         print("Not ANagram")
+
+
+line = "abcde"
+res = {}
+for i in line:
+    if i in res:
+        res[i] += 1
+    else:
+        res[i] = 1
+
+for val in res.values():
+    if val > 1:
+        print(False)
+        break
+else:
+    print(True)
