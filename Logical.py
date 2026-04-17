@@ -544,3 +544,29 @@
 #     j -= 1
 # else:
 #     print("Palindrom")
+
+
+# Return True if all characters in the string are unique.
+
+# line = "abcde"
+# res = {}
+# for i in line:
+#     if i in res:
+#         res[i] += 1
+#     else:
+#         res[i] = 1
+
+# for val in res.values():
+#     if val > 1:
+#         print(False)
+#         break
+# else:
+#     print(True)
+
+# Another Way:
+
+# line = "asdff"
+# if len(set(line)) == len(line):
+#     print(True)
+# else:
+#     print(False)
