@@ -456,10 +456,10 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 
 # print(rev)
 
-line = "racecar"
+# line = "racecar"
 # res = ""
 # for ch in line:
-#     res = ch + res 
+#     res = ch + res
 # if line == res:
 #     print(True)
 # line = "racecar"
@@ -505,16 +505,25 @@ line = "racecar"
 # else:
 #     print(False)
 
-# Count the number of vowels and consonants in a string.
-line = "hello world"
-vowels = "aeiou"
-v = 0
-c = 0
+# # Count the number of vowels and consonants in a string.
+# line = "hello world"
+# vowels = "aeiou"
+# v = 0
+# c = 0
+# for i in line:
+#     if i != " ":
+#         if i not in vowels:
+#             c += 1
+#         else :
+#             v += 1
+# print(v,c)
+
+# Replace all spaces in a string with underscore without using .replace().
+line = "hello world python"
+result = ""
 for i in line:
-    if i != " ":
-        if i not in vowels:
-            c += 1
-        else :
-            v += 1
-print(v,c)
-    
+    if i == " ":
+        result += "_"
+    else:
+        result += i
+print(result)

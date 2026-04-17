@@ -584,3 +584,13 @@ for i in line:
         else :
             v += 1
 print(v,c)
+
+# Replace all spaces in a string with underscore without using .replace().
+line = "hello world python"
+result = ""
+for i in line:
+    if i == " ":
+        result += "_"
+    else:
+        result += i
+print(result)
