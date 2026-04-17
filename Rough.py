@@ -447,11 +447,28 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 #         rev = j + rev
 # print(rev)
 
-line = "hello world"
-words = line.split()
-rev = []
+# line = "hello world"
+# words = line.split()
+# rev = []
 
-for i in range(len(words), -1, -1):
-    rev.append(words[i])
+# for i in range(len(words), -1, -1):
+#     rev.append(words[i])
 
-print(rev)
+# print(rev)
+
+line = "racecar"
+# res = ""
+# for ch in line:
+#     res = ch + res 
+# if line == res:
+#     print(True)
+line = "racecar"
+i,j = 0,len(line)-1
+while i < j:
+    if line[i] != line[j]:
+        print("Not Palindrom")
+    i += 1
+    j -= 1
+else:
+    print("Palindrom")
+
