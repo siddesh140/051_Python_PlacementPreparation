@@ -519,11 +519,38 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 # print(v,c)
 
 # Replace all spaces in a string with underscore without using .replace().
-line = "hello world python"
-result = ""
-for i in line:
-    if i == " ":
-        result += "_"
-    else:
-        result += i
-print(result)
+# line = "hello world python"
+# result = ""
+# for i in line:
+#     if i == " ":
+#         result += "_"
+#     else:
+#         result += i
+# print(result)
+
+
+# Convert uppercase to lowercase and vice versa for each character.
+# line = "hELLO wORLD"
+# result = ""
+# for ch in line:
+#         if ch.isupper():
+#             result += ch.lower()
+#         elif ch.islower():
+#             result += ch.upper()
+#         else:
+#             result += ch
+# print(result)
+
+# Remove all vowels from a given string.
+# line = "Hello World"
+# vowels = "aeiouAEIOU"
+# result = ""
+# for ch in line:
+#     if ch not in vowels:
+#         result += ch
+# print(result)
+
+
+
+
+
