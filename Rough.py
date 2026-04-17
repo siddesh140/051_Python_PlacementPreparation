@@ -462,13 +462,21 @@ line = "racecar"
 #     res = ch + res 
 # if line == res:
 #     print(True)
-line = "racecar"
-i,j = 0,len(line)-1
-while i < j:
-    if line[i] != line[j]:
-        print("Not Palindrom")
-    i += 1
-    j -= 1
-else:
-    print("Palindrom")
+# line = "racecar"
+# i,j = 0,len(line)-1
+# while i < j:
+#     if line[i] != line[j]:
+#         print("Not Palindrom")
+#     i += 1
+#     j -= 1
+# else:
+#     print("Palindrom")
 
+# line1 = "Listen"
+# line2 = "Silent"
+
+# if len(line1) == len(line2):
+#     if sorted(line1) == sorted(line2):
+#         print("ANagram")
+#     else:
+#         print("Not ANagram")

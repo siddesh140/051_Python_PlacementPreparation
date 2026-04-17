@@ -535,12 +535,12 @@
 
 # To check Palindrom
 
-line = "racecar"
-i,j = 0,len(line)-1
-while i < j:
-    if line[i] != line[j]:
-        print("Not Palindrom")
-    i += 1
-    j -= 1
-else:
-    print("Palindrom")
+# line = "racecar"
+# i,j = 0,len(line)-1
+# while i < j:
+#     if line[i] != line[j]:
+#         print("Not Palindrom")
+#     i += 1
+#     j -= 1
+# else:
+#     print("Palindrom")
