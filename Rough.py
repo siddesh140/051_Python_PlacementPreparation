@@ -550,7 +550,61 @@ ls = [5, 6, 1, 0, 4, 8, 9]
 #         result += ch
 # print(result)
 
+# Count the total number of words
+# line = "I love Python coding"
+# words = line.split()
+# count = 0
+# for word in words:
+#     count += 1
+# print(count)
+
+# Find the first character in a string that does not repeat.
+# Input: "aabbcddeff" → 'c'
+# line = "aabbcddeff"
+# freq = {}
+# for i in line:
+#     if i in freq:
+#         freq[i] += 1
+#     else:
+#         freq[i] = 1
+# for f in line:
+#     if freq[f] == 1:
+#         print(f)
+#         break
+
+# line = "SCHOOL"
+# freq = {}
+# for i in line:
+#     if i in freq:
+#         freq[i] += 1
+#     else:
+#         freq[i] = 1
+# print(freq)
+
+# import numpy as np
+
+# n = np.arange((3,3))
+# print(n)
 
 
+# line = "siddesh"
+# rev = ""
+# for i in line:
+# 	rev = i + rev
+# print(i, end = " ")
 
+# print reverse string vertically
+# for ch in line[::-1]:
+#     print(ch)
 
+# find first duplicate number
+# num = [1,2,3,3,3,3,4]
+# blank = []
+# for i in num:
+#     if i in blank:
+#         print(i)
+#         break
+#     else:
+#         blank.append(i)
+
+    

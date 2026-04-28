@@ -596,22 +596,47 @@ print(v,c)
 # print(result)
 
 # Convert uppercase to lowercase and vice versa for each character.
-line = "hELLO wORLD"
-result = ""
-for ch in line:
-        if ch.isupper():
-            result += ch.lower()
-        elif ch.islower():
-            result += ch.upper()
-        else:
-            result += ch
-print(result)
+# line = "hELLO wORLD"
+# result = ""
+# for ch in line:
+#         if ch.isupper():
+#             result += ch.lower()
+#         elif ch.islower():
+#             result += ch.upper()
+#         else:
+#             result += ch
+# print(result)
 
 # Remove all vowels from a given string.
-line = "Hello World"
-vowels = "aeiouAEIOU"
-result = ""
-for ch in line:
-    if ch not in vowels:
-        result += ch
-print(result)
+# line = "Hello World"
+# vowels = "aeiouAEIOU"
+# result = ""
+# for ch in line:
+#     if ch not in vowels:
+#         result += ch
+# print(result)
+
+
+# Find the first character in a string that does not repeat.
+# Input: "aabbcddeff" → 'c'
+# line = "aabbcddeff"
+# freq = {}
+# for i in line:
+#     if i in freq:
+#         freq[i] += 1
+#     else:
+#         freq[i] = 1
+# for f in line:
+#     if freq[f] == 1:
+#         print(f)
+#         break
+
+# find first duplicate number
+# num = [1,2,3,3,3,3,4]
+# blank = []
+# for i in num:
+#     if i in blank:
+#         print(i)
+#         break
+#     else:
+#         blank.append(i)
